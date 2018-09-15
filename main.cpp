@@ -25,6 +25,16 @@ struct Integer {
 };
 
 int main(int argc, char *argv[]) {
+    int sizes[] = {5, 6};
+    Vector<Integer> v1(2, sizes);
+
+    int coord[] = {2, 2};
+    v1.set(6, coord);
+
+    cout << v1.get(coord) << endl;
+
+
+
     system("pause");
     return EXIT_SUCCESS;
 }
